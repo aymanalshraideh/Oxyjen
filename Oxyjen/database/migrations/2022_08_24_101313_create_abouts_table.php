@@ -15,13 +15,9 @@ return new class extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
-            $table->text('coverImage');
-            $table->text('image1');
-            $table->text('image2');
-            $table->text('image3');
             $table->string('teamMembers');
-            $table->text('description');
-            $table->string('partenerShip');
+            $table->text('about_us');
+            $table->string('partenership');
             $table->timestamps();
         });
     }

@@ -16,15 +16,15 @@
                             <small class="text-muted float-end">Default label</small>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('updateProduct',$Productjoin[0]->id) }}" method="post" enctype="multipart/form-data">
+                            <form action="" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname" required>Product Name</label>
-                                    <input type="text" name="name" class="form-control" id="basic-default-fullname" value="{{$Productjoin[0]->name}}"/>
+                                    <input type="text" name="name" class="form-control" id="basic-default-fullname" value=""/>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-message">Description</label>
-                                    <textarea name="description" id="basic-default-message"  required class="form-control" placeholder="Add text here...">{{$Productjoin[0]->description}}</textarea>
+                                    <textarea name="description" id="basic-default-message"  required class="form-control" placeholder="Add text here..."></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Product image</label>
@@ -32,20 +32,20 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Price</label>
-                                    <input class="form-control" name="price" type="number" id="formFile" step="0.1" value="{{$Productjoin[0]->price}}"
+                                    <input class="form-control" name="price" type="number" id="formFile" step="0.1" value=""
                                         required />
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Quantity</label>
-                                    <input class="form-control" name="quantity" type="number" id="formFile" required value="{{$Productjoin[0]->quantity}}"/>
+                                    <input class="form-control" name="quantity" type="number" id="formFile" required value=""/>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Kitchen</label>
-                                    <select name="category_id" class="form-control" required selected value="{{$Productjoin[0]->kitchen_name}}">
-                                        @foreach ($kitchens as $category)
-                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                        @endforeach
+                                    <select name="category_id" class="form-control" required selected value="">
+                                        {{-- @foreach ($kitchens as $category) --}}
+                                            <option value=""></option>
+                                        {{-- @endforeach --}}
                                     </select>
                                 </div>
 

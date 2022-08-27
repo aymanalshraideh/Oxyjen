@@ -16,7 +16,7 @@
                             <small class="text-muted float-end">Default label</small>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('product.store') }}" method="post" enctype="multipart/form-data">
+                            <form action="" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname" required>Product Name</label>
@@ -44,9 +44,9 @@
                                     <label for="formFile" class="form-label">Kitchen</label>
                                     <select name="category_id" class="form-control" required>
                                         <option>Select kitchen</option>
-                                        @foreach ($kitchens as $category)
-                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                        @endforeach
+                                        {{-- @foreach ($kitchens as $category) --}}
+                                            <option value=""></option>
+                                        {{-- @endforeach --}}
                                     </select>
                                 </div>
 

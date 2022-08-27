@@ -14,7 +14,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        //
+        $about = About::all();
+        return view('admin.about.aboutView', compact('about'));
     }
 
     /**
@@ -24,7 +25,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.about.aboutCreate');
     }
 
     /**
@@ -35,7 +36,10 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $about = $request->all();
+        About::create($about);
+        return redirect()->route('about');
+        
     }
 
     /**
@@ -55,9 +59,10 @@ class AboutController extends Controller
      * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function edit(About $about)
+    public function edit($id)
     {
-        //
+        $about = About::find($id);
+        return view('admin.about.aboutEdit', compact('about'));
     }
 
     /**
@@ -67,9 +72,11 @@ class AboutController extends Controller
      * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, About $about)
+    public function update(Request $request, $id)
     {
-        //
+        $about = About::find($id);
+        $about->update($request->all());
+        return redirect()->route('about');
     }
 
     /**
@@ -78,8 +85,10 @@ class AboutController extends Controller
      * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function destroy(About $about)
+    public function destroy($id)
     {
-        //
+        $about = About::find($id);
+        $about->delete();
+        return redirect()->route('about');
     }
 }

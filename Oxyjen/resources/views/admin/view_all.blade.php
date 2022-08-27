@@ -29,53 +29,36 @@
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
-                            @foreach ($OrderJoin as $item)
+                            {{-- @foreach ($OrderJoin as $item) --}}
                                 <tr>
                                     <td>{{ ++$count }}</td>
 
                                     <td>
-                                        {{ $item->id }}
+                                        {{-- {{ $item->id }} --}}
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        <strong>{{ $item->UserName }}</strong>
+                                        <strong>
+                                            {{-- {{ $item->UserName }} --}}
+                                        </strong>
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
                                         {{ $item->product_quantity }}
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        <?php
-                                            if($item->order_status == 0){
-                                                ?>
-                                        <span class="badge rounded-pill bg-secondary">Pending</span>
-                                        <?php
-                                            }elseif($item->order_status == 1){?>
-                                        <span class="badge rounded-pill bg-primary">Processing</span>
-                                        <?php
-                                            }elseif($item->order_status == 2){?>
-                                        <span class="badge rounded-pill bg-danger">Shipped</span>
-                                        <?php
-                                            }elseif($item->order_status == 3){
-                                                ?>
-                                        <span class="badge rounded-pill bg-success"> Delivered</span>
-                                        <?php
-                                            }elseif($item->order_status == 4){?>
-                                        <span class="badge rounded-pill bg-info">Cancelled</span>
-                                        <?php  
-                                          }
-                                        ?>
+                                        
 
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->address }}
+                                        {{-- {{ $item->address }} --}}
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->phonenumber }}
+                                        {{-- {{ $item->phonenumber }} --}}
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->order_total_price }}
+                                        {{-- {{ $item->order_total_price }} --}}
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->created_at }}
+                                        {{-- {{ $item->created_at }} --}}
                                     </td>
 
                                     <td>
@@ -85,37 +68,37 @@
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
-                                                <form action="{{ route('cancel', $item->id) }}" method="post">
+                                                <form action="" method="post">
                                                     @csrf
                                                     <button type="submit" class="dropdown-item"><i
                                                             class="bx bx-edit-alt me-1"></i>
                                                         Cancel</button>
                                                 </form>
-                                                <form action="{{ route('shipped', $item->id) }}" method="post">
+                                                <form action="" method="post">
                                                     @csrf
                                                     <button class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>
                                                         Shipped</button>
                                                 </form>
-                                                <form action="{{ route('pending', $item->id) }}" method="post">
+                                                <form action="" method="post">
                                                     @csrf
                                                     <button class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>
                                                         Pending</button>
                                                 </form>
-                                                <form action="{{ route('delevered', $item->id) }}" method="post">
+                                                <form action="" method="post">
                                                     @csrf
                                                     <button class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>
                                                         Delivered</button>
                                                 </form>
-                                                <form action="{{ route('process', $item->id) }}" method="post">
+                                                <form action="" method="post">
                                                     @csrf
                                                     <button class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>
                                                         Processing</button>
                                                 </form>
 
 
-                                                <form action="{{ route('order.destroy', $item->id) }}" method="POST"
+                                                <form action="" method="POST"
                                                     class="d-inline">
-                                                    @method('DELETE')
+                                                    {{-- @method('DELETE') --}}
                                                     @csrf
                                                     <span class="dropdown-item"><i class="bx bx-trash me-1"></i> <button
                                                             style="border: none; background-color:transparent;margin:0;padding:0;font-weight: 400;

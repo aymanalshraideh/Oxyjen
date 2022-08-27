@@ -54,8 +54,8 @@
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
-                        <a href="/admindash">
-                                        <img src="/images/logo.jpg" alt="logo">
+                        <a href="">
+                                        <img src="/admin/logo1.png" alt="logo" width="130px" height="130px">
                                     </a>
                     </a>
 
@@ -68,50 +68,31 @@
                 <div class="menu-inner-shadow"></div>
 
                 <ul class="menu-inner py-1">
-                    <!-- Dashboard -->
+                   
                    
 
-                    {{-- <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-layout"></i>
-                            <div data-i18n="Layouts">Categories</div>
-                        </a>
-
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="{{route('category.index')}}" class="menu-link">
-                                    <div data-i18n="Without menu">Show Categories</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{route('category.create')}}" class="menu-link">
-                                    <div data-i18n="Without navbar">Create Categories</div>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </li> --}}
+                   
 
                     <!-- Kitchens -->
                     <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Pages</span>
+                        <span class="menu-header-text">Components</span>
                     </li>
                    
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
-                            <div data-i18n="Layouts">Kitchens</div>
+                            <div data-i18n="Layouts">Slider</div>
                         </a>
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ route('category.index') }}" class="menu-link">
-                                    <div data-i18n="Without menu">Show Categories</div>
+                                <a href="slider" class="menu-link">
+                                    <div data-i18n="Without menu">Show Slider</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('category.create') }}" class="menu-link">
-                                    <div data-i18n="Without navbar">Create Categories</div>
+                                <a href="slider-create" class="menu-link">
+                                    <div data-i18n="Without navbar">Create Slider</div>
                                 </a>
                             </li>
 
@@ -121,18 +102,18 @@
                    <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
-                            <div data-i18n="Layouts">Products</div>
+                            <div data-i18n="Layouts">About US</div>
                         </a>
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ route('product.index') }}" class="menu-link">
-                                    <div data-i18n="Without menu">Show Products</div>
+                                <a href="about" class="menu-link">
+                                    <div data-i18n="Without menu">Show About us </div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('product.create') }}" class="menu-link">
-                                    <div data-i18n="Without navbar">Create Products</div>
+                                <a href="about-create" class="menu-link">
+                                    <div data-i18n="Without navbar">Create About us</div>
                                 </a>
                             </li>
 
@@ -149,7 +130,7 @@
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ route('admindash') }}" class="menu-link">
+                                <a href="" class="menu-link">
                                     <div data-i18n="Without menu">Show Orders</div>
                                 </a>
                             </li>

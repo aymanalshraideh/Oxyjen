@@ -23,16 +23,16 @@
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
-                            @foreach ($categories as $item)
+                           
                                 <tr>
-                                    <td>{{ ++$count }}</td>
+                                    <td></td>
 
                                     <td>
-                                        <img src={{ url('public/Image/' . $item->image) }} alt="Avatar"
+                                        <img src='' alt="Avatar"
                                             class="rounded-circle" style="height: 100px; width: 150px;" />
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        <strong>{{ $item->name }}</strong>
+                                        <strong></strong>
                                     </td>
 
                                     <td>
@@ -42,10 +42,10 @@
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="{{route('category.edit',$item->id)}}"><i class="bx bx-edit-alt me-1"></i>
+                                                <a class="dropdown-item" href=""><i class="bx bx-edit-alt me-1"></i>
                                                     Edit</a>
 
-                                                <form action="{{route('category.destroy',$item->id)}}" method="POST" class="d-inline">
+                                                <form action="" method="POST" class="d-inline">
                                                     @method('DELETE')
                                                     @csrf
                                                     <span class="dropdown-item"><i class="bx bx-trash me-1"></i> <button
