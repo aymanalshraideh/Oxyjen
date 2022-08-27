@@ -28,14 +28,13 @@ Route::post('about-store', 'App\Http\Controllers\AboutController@store')->name('
 Route::get('about-edit/{id}', 'App\Http\Controllers\AboutController@edit')->name('about-edit');
 Route::put('about-update/{id}', 'App\Http\Controllers\AboutController@update')->name('about-update');
 Route::delete('about-delete/{id}', 'App\Http\Controllers\AboutController@destroy')->name('about-delete');
-
-// service routes
-Route::get('service', 'App\Http\Controllers\ServiceController@index')->name('service');
-Route::get('service-create', 'App\Http\Controllers\ServiceController@create')->name('service-create');
-Route::post('service-store', 'App\Http\Controllers\ServiceController@store')->name('service-store');
-Route::get('service-edit/{id}', 'App\Http\Controllers\ServiceController@edit')->name('service-edit');
-Route::put('service-update/{id}', 'App\Http\Controllers\ServiceController@update')->name('service-update');
-Route::delete('service-delete/{id}', 'App\Http\Controllers\ServiceController@destroy')->name('service-delete');
+// startup routes
+Route::get('startup', 'App\Http\Controllers\StartupController@index')->name('startup');
+Route::get('startup-create', 'App\Http\Controllers\StartupController@create')->name('startup-create');
+Route::post('startup-store', 'App\Http\Controllers\StartupController@store')->name('startup-store');
+Route::get('startup-edit/{id}', 'App\Http\Controllers\StartupController@edit')->name('startup-edit');
+Route::put('startup-update/{id}', 'App\Http\Controllers\StartupController@update')->name('startup-update');
+Route::delete('startup-delete/{id}', 'App\Http\Controllers\StartupController@destroy')->name('startup-delete');
 
 
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Satrtup;
 use Illuminate\Http\Request;
 
-class SatrtupController extends Controller
+class StartupController extends Controller
 {
     /**
      * Display a listing of the resource.

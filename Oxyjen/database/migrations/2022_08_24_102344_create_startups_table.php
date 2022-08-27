@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('satrtup_applies', function (Blueprint $table) {
+        Schema::create('startups', function (Blueprint $table) {
             $table->id();
             $table->string('companyName');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('location');
-            $table->text('description');
+            $table->string('description');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('satrtup_applies');
+        Schema::dropIfExists('satrtups');
     }
 };
