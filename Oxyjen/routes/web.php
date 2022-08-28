@@ -35,7 +35,19 @@ Route::post('startup-store', 'App\Http\Controllers\StartupController@store')->na
 Route::get('startup-edit/{id}', 'App\Http\Controllers\StartupController@edit')->name('startup-edit');
 Route::put('startup-update/{id}', 'App\Http\Controllers\StartupController@update')->name('startup-update');
 Route::delete('startup-delete/{id}', 'App\Http\Controllers\StartupController@destroy')->name('startup-delete');
+// program routes
+Route::get('program', 'App\Http\Controllers\ProgramController@index')->name('program');
+Route::get('program-create', 'App\Http\Controllers\ProgramController@create')->name('program-create');
+Route::post('program-store', 'App\Http\Controllers\ProgramController@store')->name('program-store');
+Route::get('program-edit/{id}', 'App\Http\Controllers\ProgramController@edit')->name('program-edit');
+Route::put('program-update/{id}', 'App\Http\Controllers\ProgramController@update')->name('program-update');
+Route::delete('program-delete/{id}', 'App\Http\Controllers\ProgramController@destroy')->name('program-delete');
 
+
+//Home
+Route::get('/home', function () {
+    return view('pages.home-3');
+});
 
 
 Route::resource('user', UserController::class);

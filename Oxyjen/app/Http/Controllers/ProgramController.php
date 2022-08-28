@@ -14,7 +14,8 @@ class ProgramController extends Controller
      */
     public function index()
     {
-        //
+        $program = Program::all();
+        return view('admin.program.programView', compact('program'));
     }
 
     /**
@@ -24,7 +25,7 @@ class ProgramController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.program.programCreate');
     }
 
     /**
@@ -35,7 +36,24 @@ class ProgramController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $program = new Program();
+        $program->program = $request->program;
+        if ($request->hasFile('image1')) {
+            $file = $request->file('image1');
+            $extension = $file->getCLientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('Image/program/', $filename);
+            $program->image = "$filename";
+        }
+        if ($request->hasFile('image2')) {
+            $file = $request->file('image2');
+            $extension = $file->getCLientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('Image/program/', $filename);
+            $program->image2 = "$filename";
+        }
+        $program->save();
+        return redirect()->route('program')->with('status', 'Program Created Successfully');
     }
 
     /**
@@ -55,9 +73,10 @@ class ProgramController extends Controller
      * @param  \App\Models\Program  $program
      * @return \Illuminate\Http\Response
      */
-    public function edit(Program $program)
+    public function edit($id)
     {
-        //
+        $program = Program::find($id);
+        return view('admin.program.programEdit', compact('program'));
     }
 
     /**
@@ -67,11 +86,37 @@ class ProgramController extends Controller
      * @param  \App\Models\Program  $program
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Program $program)
+    public function update(Request $request, $id)
     {
-        //
-    }
+        $program = Program::find($id);
+        $program->program = $request->program;
+        if ($program->file('image1')) {
+            $destinationPath = public_path('Image/program');
+            if (exist($program->image1)) {
+                delete($destinationPath . $program->image1);
+            }
+            $file = $request->file('image1');
+            $extension = $file->getCLientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('Image/program/', $filename);
+            $program->image1 = "$filename";
 
+        }
+        if ($program->file('image2')) {
+            $destinationPath = public_path('Image/program');
+            if (exist($program->image2)) {
+                delete($destinationPath . $program->image1);
+            }
+            $file = $request->file('image2');
+            $extension = $file->getCLientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('Image/program/', $filename);
+            $program->image2 = "$filename";
+
+        }
+        $program->save();
+        return redirect()->route('program');
+    }
     /**
      * Remove the specified resource from storage.
      *
