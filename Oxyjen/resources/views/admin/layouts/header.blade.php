@@ -68,16 +68,16 @@
                 <div class="menu-inner-shadow"></div>
 
                 <ul class="menu-inner py-1">
-                   
-                   
 
-                   
 
-                    
+
+
+
+
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Components</span>
                     </li>
-                   
+
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
@@ -155,25 +155,48 @@
                                     <div data-i18n="Without menu">Show Orders</div>
                                 </a>
                             </li>
-                           
+
                         </ul>
                     </li>
                     <!-- User interface -->
-                   
+                   <!-- Components -->
+                   <li class="menu-header small text-uppercase"><span class="menu-header-text">Home</span></li>
+                   <!-- Cards -->
+                   <li class="menu-item">
+                       <a href="javascript:void(0);" class="menu-link menu-toggle">
+                           <i class="menu-icon tf-icons bx bx-layout"></i>
+                           <div data-i18n="Layouts">Home</div>
+                       </a>
+
+                       <ul class="menu-sub">
+                           <li class="menu-item">
+                               <a href="" class="menu-link">
+                                   <div data-i18n="Without menu">Show Home</div>
+                               </a>
+                           </li>
+                           <li class="menu-item">
+                            <a href="" class="menu-link">
+                                <div data-i18n="Without menu">Edit Home</div>
+                            </a>
+                        </li>
+
+                       </ul>
+                   </li>
+                   <!-- User interface -->
 
                     <!-- Extended components -->
-                    
 
-                 
+
+
                     <!-- Forms & Tables -->
-               
-                          
-                
+
+
+
                     <!-- Tables -->
-              
+
                     <!-- Misc -->
-                  
-                  
+
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -203,7 +226,7 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
-                            
+
 
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
