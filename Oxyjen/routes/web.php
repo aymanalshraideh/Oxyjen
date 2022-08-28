@@ -44,6 +44,11 @@ Route::put('program-update/{id}', 'App\Http\Controllers\ProgramController@update
 Route::delete('program-delete/{id}', 'App\Http\Controllers\ProgramController@destroy')->name('program-delete');
 
 
+//Home
+Route::get('/home', function () {
+    return view('pages.home-3');
+});
+
 
 Route::resource('user', UserController::class);
 Route::middleware([
