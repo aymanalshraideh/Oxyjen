@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SatrtupApply;
 use Illuminate\Http\Request;
 
 class StartupApplyController extends Controller

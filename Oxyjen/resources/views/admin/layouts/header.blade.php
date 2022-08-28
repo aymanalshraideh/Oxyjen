@@ -73,7 +73,7 @@
 
                    
 
-                    <!-- Kitchens -->
+                    
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Components</span>
                     </li>
@@ -86,34 +86,55 @@
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="slider" class="menu-link">
+                                <a href="/slider" class="menu-link">
                                     <div data-i18n="Without menu">Show Slider</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="slider-create" class="menu-link">
+                                <a href="/slider-create" class="menu-link">
                                     <div data-i18n="Without navbar">Create Slider</div>
                                 </a>
                             </li>
 
                         </ul>
                     </li>
-                   <!-- Category -->
+                   <!-- About us -->
                    <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-layout"></i>
+                            <i class="menu-icon tf-icons bx bx-box"></i>
                             <div data-i18n="Layouts">About US</div>
                         </a>
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="about" class="menu-link">
+                                <a href="/about" class="menu-link">
                                     <div data-i18n="Without menu">Show About us </div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="about-create" class="menu-link">
+                                <a href="/about-create" class="menu-link">
                                     <div data-i18n="Without navbar">Create About us</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    {{-- Startups --}}
+                     <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-detail"></i>
+                            <div data-i18n="Layouts">Startup Companies</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/startup" class="menu-link">
+                                    <div data-i18n="Without menu">Show Startups </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="startup-create" class="menu-link">
+                                    <div data-i18n="Without navbar">Create Startup</div>
                                 </a>
                             </li>
 

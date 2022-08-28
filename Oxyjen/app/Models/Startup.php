@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Startup extends Model
 {
     use HasFactory;
+    protected $fillable = ['companyName', 'description', 'image'];
 }
