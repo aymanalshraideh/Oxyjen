@@ -10,9 +10,10 @@
             <rs-module id="rev_slider_1_1" style="" data-version="6.0.1" class="rev_slider_1_1_height">
                 <!-- rs-slides -->
                 <rs-slides>
+
                     <!-- rs-slide -->
                     <rs-slide data-key="rs-1" data-title="Slide" data-thumb="images/slides/slider-mainbg-001.jpg" data-anim="  ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-                        <img src="images/slides/slider-mainbg-001.jpg" title="home-mainslider-bg001" width="1920" height="850" class="rev-slidebg" data-no-retina>
+                        <img src="image/slider/{{$slider->coverImage1}}" title="home-mainslider-bg001" width="1920" height="850" class="rev-slidebg" data-no-retina>
                         <rs-layer
                             id="slider-1-slide-1-layer-0"
                             class="ttm-bgcolor-skincolor"
@@ -39,7 +40,7 @@
                             data-frame_0="y:100%;"
                             data-frame_1="st:940;sp:500;sR:940;"
                             data-frame_999="o:0;st:w;sR:7560;"
-                            >Discuss Your Project
+                            >{{$slider->link1}}
                         </a>
                         <rs-layer
                             id="slider-1-slide-1-layer-2"
@@ -51,9 +52,9 @@
                             data-frame_0="x:-50,-50,-31,-19;"
                             data-frame_1="e:Power0.easeIn;st:250;sp:800;sR:250;"
                             data-frame_999="o:0;st:w;sR:7950;"
-                            >Best <strong class="ttm-textcolor-skincolor">Platform</strong> to Grow
+                            >{{$slider->title1}}
                         </rs-layer>
-                        <rs-layer
+                        {{-- <rs-layer
                             id="slider-1-slide-1-layer-3"
                             data-type="text"
                             data-color="#1e2637"
@@ -64,8 +65,8 @@
                             data-frame_1="e:Power0.easeIn;st:450;sp:800;sR:450;"
                             data-frame_999="o:0;st:w;sR:7750;"
                             >Your Business
-                        </rs-layer>
-                        <a
+                        </rs-layer> --}}
+                        {{-- <a
                             id="slider-1-slide-1-layer-4"
                             class="rs-layer"
                             href="#" target="_self" rel="nofollow"
@@ -79,7 +80,7 @@
                             data-frame_999="o:0;st:w;sR:7450;"
                             data-frame_hover="c:#2d4a8a;"
                             >Get A Quote
-                        </a>
+                        </a> --}}
                         <rs-layer
                             id="slider-1-slide-1-layer-5"
                             data-type="text"
@@ -91,9 +92,10 @@
                             data-frame_0="x:-50,-50,-31,-19;"
                             data-frame_1="e:Power0.easeIn;st:860;sp:500;sR:860;"
                             data-frame_999="o:0;st:w;sR:7640;"
-                            >We are equipped with an updated technical knowledge to serve our customers<br> properly. Our method of application maintains the industry.
+
+                            >{{$slider->description1}}
                         </rs-layer>
-                        <a
+                        {{-- <a
                             id="slider-1-slide-1-layer-6"
                             class="rs-layer"
                             href="#" target="_self" rel="nofollow"
@@ -108,14 +110,15 @@
                             data-frame_999="o:0;st:w;sR:7450;"
                             data-frame_hover="c:#2d4a8a;"
                             > <i class="ti ti-arrow-circle-right"></i>
-                        </a>
+                        </a> --}}
                     </rs-slide>
                     <!-- rs-slide -->
+
                     <!-- rs-slide -->
                     <rs-slide data-key="rs-2" data-title="Slide" data-thumb="images/slides/slider-mainbg-002.jpg"
                         data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
 
-                        <img src="images/slides/slider-mainbg-002.jpg" title="home-mainslider-bg002" width="1920" height="850" class="rev-slidebg" data-no-retina>
+                        <img src="image/slider/{{$slider->coverImage2}}" title="home-mainslider-bg002" width="1920" height="850" class="rev-slidebg" data-no-retina>
 
                         <rs-layer
                             id="slider-1-slide-2-layer-0"
@@ -157,9 +160,9 @@
                             data-frame_0="x:-50,-50,-31,-19;"
                             data-frame_1="e:Power0.easeIn;st:250;sp:800;sR:250;"
                             data-frame_999="o:0;st:w;sR:7950;"
-                        >Real-Time Monitoring
+                        >{{$slider->title2}}
                         </rs-layer>
-                        <rs-layer
+                        {{-- <rs-layer
                             id="slider-1-slide-2-layer-3"
                             data-type="text"
                             data-color="#1e2637"
@@ -170,7 +173,7 @@
                             data-frame_1="e:Power0.easeIn;st:450;sp:800;sR:450;"
                             data-frame_999="o:0;st:w;sR:7750;"
                             >Your <strong class="ttm-textcolor-skincolor">Infrstracture</strong>
-                        </rs-layer>
+                        </rs-layer> --}}
                         <rs-layer
                             id="slider-1-slide-2-layer-4"
                             data-type="text"
@@ -183,7 +186,7 @@
                             data-frame_0="x:-50,-50,-31,-19;"
                             data-frame_1="e:Power0.easeIn;st:860;sp:500;sR:860;"
                             data-frame_999="o:0;st:w;sR:7640;"
-                            >We are equipped with an updated technical knowledge to serve our customers<br> properly. Our method of application maintains the industry.
+                            >{{$slider->description2}}
                         </rs-layer>
                         <a
                             id="slider-1-slide-2-layer-5"
@@ -197,7 +200,7 @@
                             data-frame_0="y:100%;"
                             data-frame_1="st:940;sp:500;sR:940;"
                             data-frame_999="o:0;st:w;sR:7560;"
-                            >Read More
+                            >{{$slider->link2}}
                         </a>
                     </rs-slide>
                     <!-- rs-slide -->

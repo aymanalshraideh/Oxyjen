@@ -2,9 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SliderController;
+
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\StartupApplyController;
+
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,10 +71,8 @@ Route::put('/partener-update/{id}', [PartenerController::class, 'update'])->name
 Route::delete('/partener-delete/{id}', [PartenerController::class, 'destroy'])->name('partener-delete');
 
 
-//Home
-Route::get('/home', function () {
-    return view('pages.home-3');
-});
+//Home 
+Route::get('/home',[HomeController::class,'index']);
 
 
 Route::resource('user', UserController::class);
