@@ -37,6 +37,11 @@ Route::put('startup-update/{id}', 'App\Http\Controllers\StartupController@update
 Route::delete('startup-delete/{id}', 'App\Http\Controllers\StartupController@destroy')->name('startup-delete');
 
 
+//Home
+Route::get('/home', function () {
+    return view('pages.home-3');
+});
+
 
 Route::resource('user', UserController::class);
 Route::middleware([
