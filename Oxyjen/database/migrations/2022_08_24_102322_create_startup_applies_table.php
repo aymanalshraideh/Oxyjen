@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('location');
             $table->text('description');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }

@@ -55,8 +55,8 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <a href="">
-                                        <img src="/admin/logo1.png" alt="logo" width="130px" height="130px">
-                                    </a>
+                            <img src="/admin/logo1.png" alt="logo" width="130px" height="130px">
+                        </a>
                     </a>
 
                     <a href="javascript:void(0);"
@@ -68,16 +68,16 @@
                 <div class="menu-inner-shadow"></div>
 
                 <ul class="menu-inner py-1">
-                   
-                   
 
-                   
 
-                    
+
+
+
+
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Components</span>
                     </li>
-                   
+
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
@@ -98,8 +98,8 @@
 
                         </ul>
                     </li>
-                   <!-- About us -->
-                   <li class="menu-item">
+                    <!-- About us -->
+                    <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-box"></i>
                             <div data-i18n="Layouts">About US</div>
@@ -120,7 +120,7 @@
                         </ul>
                     </li>
                     {{-- Startups --}}
-                     <li class="menu-item">
+                    <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
                             <div data-i18n="Layouts">Startup Companies</div>
@@ -140,40 +140,77 @@
 
                         </ul>
                     </li>
-                    <!-- Components -->
-                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>
-                    <!-- Cards -->
+                    {{-- Programs --}}
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-layout"></i>
-                            <div data-i18n="Layouts">Orders</div>
+                            <i class="menu-icon tf-icons bx bx-box"></i>
+                            <div data-i18n="Layouts">Program</div>
                         </a>
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="" class="menu-link">
-                                    <div data-i18n="Without menu">Show Orders</div>
+                                <a href="/program" class="menu-link">
+                                    <div data-i18n="Without menu">Show programs </div>
                                 </a>
                             </li>
-                           
+                            <li class="menu-item">
+                                <a href="/program-create" class="menu-link">
+                                    <div data-i18n="Without navbar">Create programs</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- Components -->
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Applications</span></li>
+                    <!-- Cards -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-layout"></i>
+                            <div data-i18n="Layouts">Applications</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/StartupApply" class="menu-link">
+                                    <div data-i18n="Without menu">Startups applications</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/booking" class="menu-link">
+                                    <div data-i18n="Without menu">Booking applications</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/partener" class="menu-link">
+                                    <div data-i18n="Without menu">Parteners applications</div>
+                                </a>
+                            </li>
+
                         </ul>
                     </li>
                     <!-- User interface -->
-                   
+
 
                     <!-- Extended components -->
-                    
 
-                 
+
+
                     <!-- Forms & Tables -->
-               
-                          
-                
+
+
+
                     <!-- Tables -->
-              
+
                     <!-- Misc -->
-                  
-                  
+
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -203,7 +240,7 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
-                            
+
 
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">

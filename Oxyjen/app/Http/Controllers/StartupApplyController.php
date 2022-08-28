@@ -13,7 +13,8 @@ class StartupApplyController extends Controller
      */
     public function index()
     {
-        //
+        $startup = Startup::all();
+        return view('admin.applications.startupApplication', compact('startup'));
     }
 
     /**
@@ -66,9 +67,12 @@ class StartupApplyController extends Controller
      * @param  \App\Models\SatrtupApply  $satrtupApply
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SatrtupApply $satrtupApply)
+    public function update(Request $request, $id)
     {
-        //
+        $startup = Startup::find($id);
+        $startup->status = $request->status;
+        $startup->save();
+        return redirect()->route('startup.index');
     }
 
     /**
