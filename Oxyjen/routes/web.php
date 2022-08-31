@@ -6,9 +6,9 @@ use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\StartupApplyController;
-
+use App\Http\Controllers\startupcompanyController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\contactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -85,3 +85,15 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+//Contact routes 
+Route::get('/contact',[contactController::class,'contact']);
+Route::post('/contact',[contactController::class,'sendEmail'])->name('add-message');
+
+
+Route::get('/partner', function () {
+    return view('applications.partner');
+});
+//startup routes
+Route::get('/startupApp', [startupcompanyController::class,'index']);
+Route::post('/startupApp',[startupcompanyController::class,'store'])->name('add-startup');
