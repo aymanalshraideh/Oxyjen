@@ -62,6 +62,10 @@ Route::post('/booking-store', [BookingController::class, 'store'])->name('bookin
 Route::get('/booking-edit/{id}', [BookingController::class, 'edit'])->name('booking-edit');
 Route::put('/booking-update/{id}', [BookingController::class, 'update'])->name('booking-update');
 Route::delete('/booking-delete/{id}', [BookingController::class, 'destroy'])->name('booking-delete');
+Route::post('cancel/{id}', [BookingController::class, 'cancel'])->name('cancel');
+Route::post('pend/{id}', [BookingController::class, 'pending'])->name('pending');
+Route::post('confirm/{id}', [BookingController::class, 'confirm'])->name('confirm');
+
 // Partener routes
 Route::get('/partener', [PartenerController::class, 'index'])->name('partener');
 Route::get('/partener-create', [PartenerController::class, 'create'])->name('partener-create');
@@ -69,6 +73,7 @@ Route::post('/partener-store', [PartenerController::class, 'store'])->name('part
 Route::get('/partener-edit/{id}', [PartenerController::class, 'edit'])->name('partener-edit');
 Route::put('/partener-update/{id}', [PartenerController::class, 'update'])->name('partener-update');
 Route::delete('/partener-delete/{id}', [PartenerController::class, 'destroy'])->name('partener-delete');
+// Booking Application  routes
 
 
 //Home 
