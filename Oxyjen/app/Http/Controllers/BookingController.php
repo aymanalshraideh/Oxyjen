@@ -88,4 +88,28 @@ class BookingController extends Controller
         $book->delete();
         return redirect()->route('booking')->with('success', 'Booking deleted successfully');
     }
+   
+
+    public function pending($id)
+    {
+        $book = Booking::find($id);
+        $book->status = 0;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Booking confirmed successfully');
+    }
+
+    public function confirm($id)
+    {
+        $book = Booking::find($id);
+        $book->status = 1;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Booking confirmed successfully');
+    }
+     public function cancle($id)
+    {
+        $book = Booking::find($id);
+        $book->status = 2;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Booking canceled successfully');
+    }
 }

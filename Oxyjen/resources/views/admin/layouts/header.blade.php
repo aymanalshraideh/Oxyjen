@@ -153,7 +153,6 @@
                                     <div data-i18n="Without menu">Show programs </div>
                                 </a>
                             </li>
-<<<<<<< HEAD
                             <li class="menu-item">
                                 <a href="/program-create" class="menu-link">
                                     <div data-i18n="Without navbar">Create programs</div>
@@ -193,17 +192,13 @@
                                     <div data-i18n="Without menu">Parteners applications</div>
                                 </a>
                             </li>
-=======
->>>>>>> 0a95b9eef811b755829a01c054ea9b73843efe93
 
                         </ul>
                     </li>
                     <!-- User interface -->
-<<<<<<< HEAD
 
-=======
-                   <!-- Components -->
-                   <li class="menu-header small text-uppercase"><span class="menu-header-text">Home</span></li>
+                   <!-- Home -->
+                   {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Home</span></li>
                    <!-- Cards -->
                    <li class="menu-item">
                        <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -224,9 +219,8 @@
                         </li>
 
                        </ul>
-                   </li>
+                   </li> --}}
                    <!-- User interface -->
->>>>>>> 0a95b9eef811b755829a01c054ea9b73843efe93
 
                     <!-- Extended components -->
 
