@@ -6,7 +6,7 @@ use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\StartupApplyController;
-
+use App\Http\Controllers\PartenerController;
 use App\Http\Controllers\HomeController;
 
 /*

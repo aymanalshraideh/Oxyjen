@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\StartupApply;
 use Illuminate\Http\Request;
 
 class StartupApplyController extends Controller
@@ -13,7 +14,7 @@ class StartupApplyController extends Controller
      */
     public function index()
     {
-        $startup = Startup::all();
+        $startup = StartupApply::all();
         return view('admin.applications.startupApplication', compact('startup'));
     }
 
@@ -69,7 +70,7 @@ class StartupApplyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $startup = Startup::find($id);
+        $startup = StartupApply::find($id);
         $startup->status = $request->status;
         $startup->save();
         return redirect()->route('StartupApply')->with('success', 'Status updated successfully');
@@ -83,7 +84,7 @@ class StartupApplyController extends Controller
      */
     public function destroy($id)
     {
-        $startup = Startup::find($id);
+        $startup = StartupApply::find($id);
         $startup->delete();
         return redirect()->route('StartupApply')->with('success', 'Startup Application Deleted Successfully');
     }
