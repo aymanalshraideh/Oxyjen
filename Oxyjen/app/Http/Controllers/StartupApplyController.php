@@ -41,10 +41,10 @@ class StartupApplyController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function show(SatrtupApply $satrtupApply)
+    public function show(StartupApply $StartupApply)
     {
         //
     }
@@ -52,10 +52,10 @@ class StartupApplyController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function edit(SatrtupApply $satrtupApply)
+    public function edit(StartupApply $StartupApply)
     {
         //
     }
@@ -64,7 +64,7 @@ class StartupApplyController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -72,17 +72,19 @@ class StartupApplyController extends Controller
         $startup = Startup::find($id);
         $startup->status = $request->status;
         $startup->save();
-        return redirect()->route('startup.index');
+        return redirect()->route('StartupApply')->with('success', 'Status updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SatrtupApply $satrtupApply)
+    public function destroy($id)
     {
-        //
+        $startup = Startup::find($id);
+        $startup->delete();
+        return redirect()->route('StartupApply')->with('success', 'Startup Application Deleted Successfully');
     }
 }
