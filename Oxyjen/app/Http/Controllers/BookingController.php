@@ -14,7 +14,8 @@ class BookingController extends Controller
      */
     public function index()
     {
-        //
+        $book = Booking::all();
+        return view('admin.applications.booking', compact('book'));
     }
 
     /**
@@ -24,7 +25,7 @@ class BookingController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.applications.booking');
     }
 
     /**
@@ -35,7 +36,7 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -57,7 +58,7 @@ class BookingController extends Controller
      */
     public function edit(Booking $booking)
     {
-        //
+        
     }
 
     /**
@@ -67,9 +68,12 @@ class BookingController extends Controller
      * @param  \App\Models\Booking  $booking
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Booking $booking)
+    public function update(Request $request,  $id)
     {
-        //
+        $book = Booking::find($id);
+        $book->status = $request->status;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Status updated successfully');
     }
 
     /**
@@ -78,8 +82,34 @@ class BookingController extends Controller
      * @param  \App\Models\Booking  $booking
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Booking $booking)
+    public function destroy( $id)
     {
-        //
+        $book = Booking::find($booking->id);
+        $book->delete();
+        return redirect()->route('booking')->with('success', 'Booking deleted successfully');
+    }
+   
+
+    public function pending($id)
+    {
+        $book = Booking::find($id);
+        $book->status = 0;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Booking confirmed successfully');
+    }
+
+    public function confirm($id)
+    {
+        $book = Booking::find($id);
+        $book->status = 1;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Booking confirmed successfully');
+    }
+     public function cancle($id)
+    {
+        $book = Booking::find($id);
+        $book->status = 2;
+        $book->save();
+        return redirect()->route('booking')->with('success', 'Booking canceled successfully');
     }
 }

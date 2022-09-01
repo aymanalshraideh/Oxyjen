@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\StartupApply;
 use Illuminate\Http\Request;
 
 class StartupApplyController extends Controller
@@ -13,7 +14,8 @@ class StartupApplyController extends Controller
      */
     public function index()
     {
-        //
+        $startup = StartupApply::all();
+        return view('admin.applications.startupApplication', compact('startup'));
     }
 
     /**
@@ -40,10 +42,10 @@ class StartupApplyController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function show(SatrtupApply $satrtupApply)
+    public function show(StartupApply $StartupApply)
     {
         //
     }
@@ -51,10 +53,10 @@ class StartupApplyController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function edit(SatrtupApply $satrtupApply)
+    public function edit(StartupApply $StartupApply)
     {
         //
     }
@@ -63,22 +65,27 @@ class StartupApplyController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SatrtupApply $satrtupApply)
+    public function update(Request $request, $id)
     {
-        //
+        $startup = StartupApply::find($id);
+        $startup->status = $request->status;
+        $startup->save();
+        return redirect()->route('StartupApply')->with('success', 'Status updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SatrtupApply  $satrtupApply
+     * @param  \App\Models\StartupApply  $StartupApply
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SatrtupApply $satrtupApply)
+    public function destroy($id)
     {
-        //
+        $startup = StartupApply::find($id);
+        $startup->delete();
+        return redirect()->route('StartupApply')->with('success', 'Startup Application Deleted Successfully');
     }
 }

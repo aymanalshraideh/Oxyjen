@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Program;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ProgramController extends Controller
 {
@@ -43,7 +44,7 @@ class ProgramController extends Controller
             $extension = $file->getCLientOriginalExtension();
             $filename = time() . '.' . $extension;
             $file->move('Image/program/', $filename);
-            $program->image = "$filename";
+            $program->image1 = "$filename";
         }
         if ($request->hasFile('image2')) {
             $file = $request->file('image2');
@@ -90,30 +91,29 @@ class ProgramController extends Controller
     {
         $program = Program::find($id);
         $program->program = $request->program;
-        if ($program->file('image1')) {
-            $destinationPath = public_path('Image/program');
-            if (exist($program->image1)) {
-                delete($destinationPath . $program->image1);
+        if ($request->file('image1')) {
+            $distenation = 'Image/program' . $program->image1;
+            if (File::exists($distenation)) {
+                File::delete($distenation);
             }
             $file = $request->file('image1');
-            $extension = $file->getCLientOriginalExtension();
-            $filename = time() . '.' . $extension;
-            $file->move('Image/program/', $filename);
-            $program->image1 = "$filename";
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('Image/program'), $filename);
+            $program['image1'] = "$filename";
 
         }
-        if ($program->file('image2')) {
-            $destinationPath = public_path('Image/program');
-            if (exist($program->image2)) {
-                delete($destinationPath . $program->image1);
+        if ($request->file('image2')) {
+            $distenation = 'Image/program' . $program->image2;
+            if (File::exists($distenation)) {
+                File::delete($distenation);
             }
             $file = $request->file('image2');
-            $extension = $file->getCLientOriginalExtension();
-            $filename = time() . '.' . $extension;
-            $file->move('Image/program/', $filename);
-            $program->image2 = "$filename";
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('Image/program'), $filename);
+            $program['image2'] = "$filename";
 
         }
+
         $program->save();
         return redirect()->route('program');
     }
@@ -123,7 +123,7 @@ class ProgramController extends Controller
      * @param  \App\Models\Program  $program
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Program $program)
+    public function destroy($id)
     {
         $program = Program::find($id);
         $program->delete();

@@ -20,6 +20,10 @@ return new class extends Migration
             $table->string('phone');
             $table->string('location');
             $table->text('description');
+            $table->string('image');
+            $table->tinyInteger('status')->default(0);
+            $table->string('CeoName');
+
             $table->timestamps();
         });
     }

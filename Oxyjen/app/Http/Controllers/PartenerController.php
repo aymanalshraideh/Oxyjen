@@ -14,7 +14,8 @@ class PartenerController extends Controller
      */
     public function index()
     {
-        //
+        $partener = Partener::all();
+        return view('admin.applications.partinersApplication', compact('partener'));
     }
 
     /**
@@ -24,7 +25,7 @@ class PartenerController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +36,7 @@ class PartenerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -67,10 +68,19 @@ class PartenerController extends Controller
      * @param  \App\Models\Partener  $partener
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Partener $partener)
+    public function update(Request $request, $id)
     {
-        //
+        $partener = Partener::find($id);
+        $partener->name = $request->name;
+        $partener->email = $request->email;
+        $partener->phone = $request->phone;
+        $partener->location = $request->location;
+        $partener->companyName = $request->companyName;
+        $partener->status = $request->status;
+        $partener->save();
+        return redirect()->route('partener.index');
     }
+    
 
     /**
      * Remove the specified resource from storage.
@@ -80,6 +90,8 @@ class PartenerController extends Controller
      */
     public function destroy(Partener $partener)
     {
-        //
+        $partener = Partener::find($partener->id);
+        $partener->delete();
+        return redirect()->route('partener');
     }
 }

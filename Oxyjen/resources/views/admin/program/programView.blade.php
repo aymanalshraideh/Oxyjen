@@ -34,20 +34,21 @@
                                     <th>{{ $count++ }}</th>
 
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->program }}
+                                        <textarea name="description1" id="basic-default-message" required class="form-control" placeholder="Add text here...">{{ $item->program }}</textarea>
+                                        
                                     </td>
-                                
+
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        <img src="{{  url('Image/program/' . $item->image1) }}" alt="startup image"
+                                        <img src="{{ url('Image/program/' . $item->image1) }}" alt="startup image"
                                             class="rounded-circle" width="150px" height='100px' />
 
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        <img src="{{  url('Image/program/' . $item->image2) }}" alt="startup image"
+                                        <img src="{{ url('Image/program/' . $item->image2) }}" alt="startup image"
                                             class="rounded-circle" width="150px" height='100px' />
 
                                     </td>
-                                    
+
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
@@ -55,11 +56,11 @@
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="{{ route('startup-edit', $item->id) }}"><i
+                                                <a class="dropdown-item" href="{{ route('program-edit', $item->id) }}"><i
                                                         class="bx bx-edit-alt me-1"></i>
                                                     Edit</a>
 
-                                                <form action={{ route('startup-delete', $item->id) }} method="POST"
+                                                <form action={{ route('program-delete', $item->id) }} method="POST"
                                                     class="d-inline">
                                                     @method('DELETE')
                                                     @csrf

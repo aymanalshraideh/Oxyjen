@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('location');
             $table->string('companyName');
+            $table->tinyInteger('status')->default(0);
+
             $table->timestamps();
         });
     }
