@@ -70,10 +70,6 @@ class BookingController extends Controller
      */
     public function update(Request $request,  $id)
     {
-        $book = Booking::find($id);
-        $book->status = $request->status;
-        $book->save();
-        return redirect()->route('booking')->with('success', 'Status updated successfully');
     }
 
     /**
@@ -84,9 +80,9 @@ class BookingController extends Controller
      */
     public function destroy( $id)
     {
-        $book = Booking::find($booking->id);
+        $book = Booking::find($id);
         $book->delete();
-        return redirect()->route('booking')->with('success', 'Booking deleted successfully');
+        return redirect()->route('booking')->with('status', 'Booking deleted successfully');
     }
    
 
@@ -95,7 +91,7 @@ class BookingController extends Controller
         $book = Booking::find($id);
         $book->status = 0;
         $book->save();
-        return redirect()->route('booking')->with('success', 'Booking confirmed successfully');
+        return redirect()->route('booking')->with('status', 'Booking confirmed successfully');
     }
 
     public function confirm($id)
@@ -103,13 +99,13 @@ class BookingController extends Controller
         $book = Booking::find($id);
         $book->status = 1;
         $book->save();
-        return redirect()->route('booking')->with('success', 'Booking confirmed successfully');
+        return redirect()->route('booking')->with('status', 'Booking confirmed successfully');
     }
-     public function cancle($id)
+     public function cancel($id)
     {
         $book = Booking::find($id);
         $book->status = 2;
         $book->save();
-        return redirect()->route('booking')->with('success', 'Booking canceled successfully');
+        return redirect()->route('booking')->with('status', 'Booking canceled successfully');
     }
 }

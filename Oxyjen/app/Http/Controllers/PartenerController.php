@@ -70,15 +70,6 @@ class PartenerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $partener = Partener::find($id);
-        $partener->name = $request->name;
-        $partener->email = $request->email;
-        $partener->phone = $request->phone;
-        $partener->location = $request->location;
-        $partener->companyName = $request->companyName;
-        $partener->status = $request->status;
-        $partener->save();
-        return redirect()->route('partener.index');
     }
     
 
@@ -92,6 +83,27 @@ class PartenerController extends Controller
     {
         $partener = Partener::find($partener->id);
         $partener->delete();
+        return redirect()->route('partener');
+    }
+    public function cancel($id)
+    {
+        $partener = Partener::find($id);
+        $partener->status=2;
+        $partener->save();
+        return redirect()->route('partener');
+    }
+    public function pending($id)
+    {
+        $partener = Partener::find($id);
+        $partener->status=0;
+        $partener->save();
+        return redirect()->route('partener');
+    }
+    public function confirm($id)
+    {
+        $partener = Partener::find($id);
+        $partener->status=1;
+        $partener->save();
         return redirect()->route('partener');
     }
 }
