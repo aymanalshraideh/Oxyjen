@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from themetechmount.com/html/altech/contact-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 06:55:31 GMT -->
+<!-- Mirrored from themetechmount.com/html/altech/contact-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 06:55:31 GMT -->
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="HTML5 Template" />
-<meta name="description" content="Altech – IT Sollutions and Services HTML Template" />
-<meta name="author" content="https://www.themetechmount.com/" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Altech – IT Solutions and Services HTML Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Altech – IT Sollutions and Services HTML Template" />
+    <meta name="author" content="https://www.themetechmount.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Altech – IT Solutions and Services HTML Template</title>
 
-<!-- favicon icon -->
-<link rel="shortcut icon" href="images/favicon.png" />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
 
-<!-- bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
-<!-- animate -->
-<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <!-- animate -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
-<!-- owl-carousel -->
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 
-<!-- fontawesome -->
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 
-<!-- themify -->
-<link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+    <!-- themify -->
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
 
-<!-- flaticon -->
-<link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
+    <!-- flaticon -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
 
-<!-- prettyphoto -->
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <!-- prettyphoto -->
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 
-<!-- shortcodes -->
-<link rel="stylesheet" type="text/css" href="css/shortcodes.css"/>
+    <!-- shortcodes -->
+    <link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
 
-<!-- main -->
-<link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!-- main -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-<!-- responsive -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <!-- responsive -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
 </head>
 
@@ -59,7 +60,8 @@
                     <div class="ttm-topbar-content">
                         <ul class="top-contact text-left">
                             <li><i class="fa fa-map-marker"></i>24 Tech Roqad st Ny 10023</li>
-                            <li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com.com">info@example.com</a></li>
+                            <li><i class="fa fa-envelope-o"></i><a
+                                    href="mailto:info@example.com.com">info@example.com</a></li>
                         </ul>
                         <div class="topbar-right text-right">
                             <ul class="top-contact">
@@ -67,18 +69,23 @@
                             </ul>
                             <div class="ttm-social-links-wrapper list-inline">
                                 <ul class="social-icons">
-                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Facebook"><i
+                                                class="fa fa-facebook"></i></a>
                                     </li>
-                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Twitter"><i
+                                                class="fa fa-twitter"></i></a>
                                     </li>
-                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Flickr"><i class="fa fa-flickr"></i></a>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Flickr"><i
+                                                class="fa fa-flickr"></i></a>
                                     </li>
-                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Linkedin"><i
+                                                class="fa fa-linkedin"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="header-btn">
-                                <a class="ttm-btn ttm-btn-size-md  ttm-btn-bgcolor-skincolor" href="#">Get A Quote</a>
+                                <a class="ttm-btn ttm-btn-size-md  ttm-btn-bgcolor-skincolor" href="#">Get A
+                                    Quote</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +121,9 @@
                                                         <div class="w-search-form-h">
                                                             <div class="w-search-form-row">
                                                                 <div class="w-search-input">
-                                                                    <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
+                                                                    <input type="search" class="field searchform-s"
+                                                                        name="s"
+                                                                        placeholder="Type Word Then Enter...">
                                                                     <button type="submit">
                                                                         <i class="ti ti-search"></i>
                                                                     </button>
@@ -136,18 +145,22 @@
                                     </div>
                                     <nav id="menu" class="menu">
                                         <ul class="dropdown">
-                                           <li><a href="#">Home</a>
+                                            <li><a href="#">Home</a>
                                                 <ul>
                                                     <li><a href="index.html">Homepage 1</a></li>
                                                     <li><a href="home-2.html">Homepage 2</a></li>
                                                     <li><a href="home-3.html">Homepage 3</a></li>
-                                                    <li><a href="home-4.html">Homepage 4<span class="label-new">New</span></a></li>
-                                                    <li><a href="home-5.html">Homepage 5<span class="label-new">New</span></a></li>
+                                                    <li><a href="home-4.html">Homepage 4<span
+                                                                class="label-new">New</span></a></li>
+                                                    <li><a href="home-5.html">Homepage 5<span
+                                                                class="label-new">New</span></a></li>
                                                     <li><a href="#">Header Styles</a>
                                                         <ul>
                                                             <li><a href="index.html">Header Style 01</a></li>
-                                                            <li><a target="_blank" href="header-style-02.html">Header Style 02</a></li>
-                                                            <li><a target="_blank" href="header-style-03.html">Header Style 03</a></li>
+                                                            <li><a target="_blank" href="header-style-02.html">Header
+                                                                    Style 02</a></li>
+                                                            <li><a target="_blank" href="header-style-03.html">Header
+                                                                    Style 03</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -160,9 +173,9 @@
                                                     <li><a href="services-02.html">Services 2</a></li>
                                                     <li><a href="our-expert.html">Our Expert</a></li>
                                                     <li><a href="faq.html">FAQs</a></li>
-                                                    <li><a href="contact-01.html">Contact Us 1</a></li>
-                                                    <li class="active"><a href="contact-02.html">Contact Us 2</a></li>
-                                                    
+                                                    <li class="active"><a href="contact-01.html">Contact Us 1</a></li>
+                                                    <li><a href="contact-02.html">Contact Us 2</a></li>
+
                                                     <li><a href="error.html">Error Page</a></li>
                                                     <li><a href="element.html">Elements</a></li>
                                                 </ul>
@@ -214,156 +227,207 @@
                         </div>
                     </div>
                 </div><!-- ttm-stickable-header-w end-->
-            </div><!--ttm-header-wrap end -->
+            </div>
+            <!--ttm-header-wrap end -->
 
-        </header><!--header end-->
+        </header>
+        <!--header end-->
 
         <!-- page-title -->
         <div class="ttm-page-title-row">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                         <div class="title-box text-center">
                             <div class="page-title-heading">
                                 <h1 class="title"> Contact Us</h1>
                             </div><!-- /.page-title-captions -->
                             <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
+                                    <a title="Homepage" href="index.html"><i
+                                            class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
                                 </span>
                                 <span class="ttm-bread-sep">&nbsp; : : &nbsp;</span>
-                                <span> Contact 02</span>
-                            </div>  
+                                <span> Contact </span>
+                            </div>
                         </div>
-                    </div><!-- /.col-md-12 -->  
-                </div><!-- /.row -->  
-            </div><!-- /.container -->                      
+                    </div><!-- /.col-md-12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
         </div><!-- page-title end-->
 
         <!--site-main start-->
         <div class="site-main">
 
             <!-- services-slide-section -->
-            <section class="ttm-row contact-section clearfix">
+            <section class="ttm-row zero-padding-section clearfix">
                 <div class="container">
-                    <div class="row"><!-- row -->
-                        <div class="col-lg-8 offset-lg-2">
-                            <!-- section-title -->
-                            <div class="section-title with-desc text-center clearfix">
-                                <div class="title-header">
-                                    <h5>Contact Us</h5>
-                                    <h2 class="title">Drop us a line</h2>
+                    <div class="row no-gutters">
+                        <!-- row -->
+                        <div class="col-lg-5">
+                            <div class="spacing-9">
+                                <!-- section title -->
+                                <div class="section-title with-desc clearfix">
+                                    <div class="title-header">
+                                        <h5>Come Visit Us At</h5>
+                                        <h2 class="title">Our Address</h2>
+                                    </div>
+                                </div><!-- section title end -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon">
+                                                <!-- featured-icon -->
+                                                <div
+                                                    class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <!-- featured title -->
+                                                    <h5>Office Address</h5>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <!-- featured desc -->
+                                                    <p>Irbid</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div><!-- section-title end -->
+                                <!-- separator -->
+                                <div class="separator">
+                                    <div class="sep-line mt-25 mb-25"></div>
+                                </div>
+                                <!-- separator -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon">
+                                                <!-- featured-icon -->
+                                                <div
+                                                    class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <!-- featured title -->
+                                                    <h5>Our Phone Number</h5>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <!-- featured desc -->
+                                                    <p>+962-07 7951 0110</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- separator -->
+                                <div class="separator">
+                                    <div class="sep-line mt-25 mb-25"></div>
+                                </div>
+                                <!-- separator -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon">
+                                                <!-- featured-icon -->
+                                                <div
+                                                    class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="ti ti-email"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <!-- featured title -->
+                                                    <h5>Our Email</h5>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <!-- featured desc -->
+                                                    <p>info@example.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="spacing-10 ttm-bgcolor-grey ttm-bg ttm-col-bgcolor-yes ttm-right-span">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
+                                    <div class="ttm-bg-layer-inner"></div>
+                                </div>
+                                <!-- section title -->
+                                <div class="section-title with-desc clearfix">
+                                    <div class="title-header">
+                                        <h5>Send Message</h5>
+                                        <h2 class="title">Drop Us A Line</h2>
+                                    </div>
+                                </div><!-- section title end -->
+                                @if(Session::has('message_sent'))
+                                <div class="alert alert-success">
+                                    {{ Session::get('message sent sussesfully') }}
+                                </div>
+                                @endif
+                                <form id="ttm-quote-form" class="row ttm-quote-form clearfix" 
+                                action="{{ route('add-message') }}" method="POST" enctype="multipart/form-data">
+                                @csrf  
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="name" type="text" class="form-control bg-white"
+                                                placeholder="Full Name*" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="phone" type="text" placeholder="Phone Number*"
+                                                required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="email" type="text" placeholder="Email Address*"
+                                                required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="subject" type="text" placeholder="Subject"
+                                                required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="Message" rows="5" placeholder="Write A Massage..." required="required"
+                                                class="form-control bg-white"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="text-left">
+                                            <button type="submit" id="submit"
+                                                class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor"
+                                                value="">
+                                                Submit 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <!-- row end -->
                     <!-- row -->
-                    <form id="ttm-quote-form" class="row ttm-quote-form clearfix" method="post" action="#">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="form-group">
-                                <input name="name" type="text" class="form-control bg-white border" placeholder="Full Name*" required="required">
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="form-group">
-                                <input name="phone" type="text" placeholder="Phone Number*" required="required" class="form-control bg-white border">
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="form-group">
-                                <input name="address" type="text" placeholder="Email Address*" required="required" class="form-control bg-white border">
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-12">
-                            <div class="form-group">
-                                <textarea name="Massage" rows="5" placeholder="Write A Massage..." required="required" class="form-control bg-white border"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor mt-20" value="">
-                                    Submit Massage
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    <!-- row end-->
+                    <div class="row">
+
+                    </div><!-- row end-->
                 </div>
             </section>
             <!-- services-slide-section end -->
-
-            <!-- map-section -->
-            <div class="ttm-row contact-box-section ttm-bgcolor-grey clearfix">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <!-- featured-icon-box -->
-                            <div class="featured-icon-box style8 text-center box-shadow">
-                                <div class="featured-icon"><!-- featured-icon-->
-                                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-bgcolor-white ttm-icon_element-size-md ttm-icon_element-style-round"> 
-                                        <i class="fa fa-envelope-o"></i>
-                                    </div>
-                                </div><!-- featured-icon -->
-                                <div class="featured-content"><!-- featured-content -->
-                                    <div class="featured-title">
-                                        <h5>Email</h5><!-- featured-title -->
-                                    </div>
-                                    <div class="featured-desc"><!-- featured-description -->
-                                        <p>
-                                            <a href="mailto:info@example.com">info@example.com</a><br>
-                                            <a href="mailto:emailexample@demo.com">emailexample@demo.com</a>
-                                        </p>
-                                    </div>
-                                </div><!-- featured-content END-->
-                            </div><!-- featured-icon-box -->
-                        </div>
-                        <div class="col-lg-4">
-                            <!-- featured-icon-box -->
-                            <div class="featured-icon-box style8 text-center box-shadow">
-                                <div class="featured-icon"><!-- featured-icon-->
-                                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-bgcolor-white ttm-icon_element-size-md ttm-icon_element-style-round"> 
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                </div><!-- featured-icon -->
-                                <div class="featured-content"><!-- featured-content -->
-                                    <div class="featured-title">
-                                        <h5>Phone</h5><!-- featured-title -->
-                                    </div>
-                                    <div class="featured-desc"><!-- featured-description -->
-                                        <p>
-                                            +01-4488-64585458<br>
-                                            11415(12456)2424
-                                        </p>
-                                    </div>
-                                </div><!-- featured-content END-->
-                            </div><!-- featured-icon-box -->
-                        </div>
-                        <div class="col-lg-4">
-                            <!-- featured-icon-box -->
-                            <div class="featured-icon-box style8 text-center box-shadow">
-                                <div class="featured-icon"><!-- featured-icon-->
-                                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-bgcolor-white ttm-icon_element-size-md ttm-icon_element-style-round"> 
-                                        <i class="ti ti-target"></i>
-                                    </div>
-                                </div><!-- featured-icon -->
-                                <div class="featured-content"><!-- featured-content -->
-                                    <div class="featured-title">
-                                        <h5>Address</h5><!-- featured-title -->
-                                    </div>
-                                    <div class="featured-desc"><!-- featured-description -->
-                                        <p>
-                                            229 Young Street Irwin, PA 15642<br>
-                                            New York
-                                        </p>
-                                    </div>
-                                </div><!-- featured-content END-->
-                            </div><!-- featured-icon-box -->
-                        </div>  
-                    </div>
-                </div>
-            </div>
-            <!-- map-section end -->
 
             <!-- map-section -->
             <div class="ttm-row map-section clearfix">
@@ -381,7 +445,8 @@
             </div>
             <!-- map-section end -->
 
-        </div><!--site-main end-->
+        </div>
+        <!--site-main end-->
 
         <!--footer start-->
         <footer class="footer widget-footer clearfix">
@@ -396,16 +461,18 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 order-md-1">
                             <div class="text-left">
-                                <!--  featured-icon-box --> 
+                                <!--  featured-icon-box -->
                                 <div class="featured-icon-box left-icon icon-align-top">
-                                    <div class="featured-icon"><!--  featured-icon --> 
+                                    <div class="featured-icon">
+                                        <!--  featured-icon -->
                                         <div class="ttm-icon ttm-icon_element-color-white ttm-icon_element-size-md">
-                                            <i class="ti ti-location-pin"></i><!--  ttm-icon --> 
+                                            <i class="ti ti-location-pin"></i><!--  ttm-icon -->
                                         </div>
                                     </div>
-                                    <div class="featured-content"><!--  featured-content --> 
+                                    <div class="featured-content">
+                                        <!--  featured-content -->
                                         <div class="featured-desc">
-                                            <p>4789 Melmorn Street, Zakilahon Ton Mashintron Town USA</p>
+                                            <p>Irbid - Jordan</p>
                                         </div>
                                     </div>
                                 </div><!--  featured-icon-box END -->
@@ -413,7 +480,9 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 order-md-3">
                             <div class="text-sm-right">
-                                <a class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-icon-btn-left ttm-btn-color-white" href="mailto:Info@example.com" title=""> Info@example.com <i class="fa fa-envelope-o"></i></a>
+                                <a class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-icon-btn-left ttm-btn-color-white"
+                                    href="mailto:Info@example.com" title=""> Info@example.com <i
+                                        class="fa fa-envelope-o"></i></a>
                             </div>
                         </div>
                     </div>
@@ -426,21 +495,28 @@
                             <div class="widget widget_text  clearfix">
                                 <h3 class="widget-title">About Our Company</h3>
                                 <div class="textwidget widget-text">
-                                    We are the best world Information Technology Company. Providing the highest quality in hardware &amp; Network solutions. About more than 20 years of experience and 1000 of innovative achievements.
+                                    We are the best world Information Technology Company. Providing the highest quality
+                                    in hardware &amp; Network solutions. About more than 20 years of experience and 1000
+                                    of innovative achievements.
                                 </div>
                                 <div class="quicklink-box">
-                                    <!--  featured-icon-box --> 
+                                    <!--  featured-icon-box -->
                                     <div class="featured-icon-box left-icon">
-                                        <div class="featured-icon"><!--  featured-icon --> 
-                                            <div class="ttm-icon ttm-icon_element-style-round ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
-                                                <span class="flaticon flaticon-clock"></span><!--  ttm-icon --> 
+                                        <div class="featured-icon">
+                                            <!--  featured-icon -->
+                                            <div
+                                                class="ttm-icon ttm-icon_element-style-round ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                <span class="flaticon flaticon-clock"></span><!--  ttm-icon -->
                                             </div>
                                         </div>
-                                        <div class="featured-content"><!--  featured-content -->
-                                            <div class="featured-desc"><!--  featured-desc -->
+                                        <div class="featured-content">
+                                            <!--  featured-content -->
+                                            <div class="featured-desc">
+                                                <!--  featured-desc -->
                                                 <p>Talk To Our Support</p>
                                             </div>
-                                            <div class="featured-title"><!--  featured-title -->
+                                            <div class="featured-title">
+                                                <!--  featured-title -->
                                                 <h5>+1 002-123-4567</h5>
                                             </div>
                                         </div>
@@ -450,7 +526,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
                             <div class="widget link-widget clearfix">
-                               <h3 class="widget-title">Quick Links</h3>
+                                <h3 class="widget-title">Quick Links</h3>
                                 <ul id="menu-footer-services">
                                     <li><a href="#">Make Appointment</a></li>
                                     <li><a href="#">Customer Services</a></li>
@@ -487,13 +563,15 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
                             <div class="widget flicker_widget clearfix">
-                               <h3 class="widget-title">News Letter</h3>
-                               <div class="textwidget widget-text">
+                                <h3 class="widget-title">News Letter</h3>
+                                <div class="textwidget widget-text">
                                     Sign up today for hints, tips and the latest product news
-                                    <form id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
+                                    <form id="subscribe-form" class="newsletter-form" method="post" action="#"
+                                        data-mailchimp="true">
                                         <div class="mailchimp-inputbox clearfix" id="subscribe-content">
                                             <i class="fa fa-envelope"></i>
-                                            <input type="email" name="email" placeholder="Email Address.." required="">
+                                            <input type="email" name="email" placeholder="Email Address.."
+                                                required="">
                                             <input type="submit" value="">
                                         </div>
                                         <div id="subscribe-msg"></div>
@@ -501,10 +579,18 @@
                                     <h5 class="mb-20">Follow Us On</h5>
                                     <div class="social-icons circle social-hover">
                                         <ul class="list-inline">
-                                            <li class="social-facebook"><a class="tooltip-top" target="_blank" href="#" data-tooltip="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                            <li class="social-twitter"><a class="tooltip-top" target="_blank" href="#" data-tooltip="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li class="social-flickr"><a class=" tooltip-top" target="_blank" href="#" data-tooltip="flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-                                            <li class="social-linkedin"><a class=" tooltip-top" target="_blank" href="#" data-tooltip="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                            <li class="social-facebook"><a class="tooltip-top" target="_blank"
+                                                    href="#" data-tooltip="Facebook"><i class="fa fa-facebook"
+                                                        aria-hidden="true"></i></a></li>
+                                            <li class="social-twitter"><a class="tooltip-top" target="_blank"
+                                                    href="#" data-tooltip="Twitter"><i class="fa fa-twitter"
+                                                        aria-hidden="true"></i></a></li>
+                                            <li class="social-flickr"><a class=" tooltip-top" target="_blank"
+                                                    href="#" data-tooltip="flickr"><i class="fa fa-flickr"
+                                                        aria-hidden="true"></i></a></li>
+                                            <li class="social-linkedin"><a class=" tooltip-top" target="_blank"
+                                                    href="#" data-tooltip="LinkedIn"><i class="fa fa-linkedin"
+                                                        aria-hidden="true"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -518,7 +604,8 @@
                     <div class="row copyright">
                         <div class="col-md-6">
                             <div class="">
-                                <span>Copyright © 2019&nbsp;<a href="#">Altech</a> Template by <a href="https://themetechmount.com/" target="_blank">Themetechmount</a></span>
+                                <span>Copyright © 2019&nbsp;<a href="#">Altech</a> Template by <a
+                                        href="https://themetechmount.com/" target="_blank">Themetechmount</a></span>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -549,41 +636,39 @@
 
     </div><!-- page end -->
 
-        <!-- Javascript -->
+    <!-- Javascript -->
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/tether.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.js"></script>    
-        <script src="js/jquery-waypoints.js"></script>    
-        <script src="js/jquery-validate.js"></script> 
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/jquery.prettyPhoto.js"></script>
-        <script src="js/numinate.min6959.js?ver=4.9.3"></script>
-        <script src="js/lazysizes.min.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery-waypoints.js"></script>
+    <script src="js/jquery-validate.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/numinate.min6959.js?ver=4.9.3"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Javascript end-->
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+        function initialize() {
+            var latlng = new google.maps.LatLng(-34.397, 150.644);
+            var myOptions = {
+                zoom: 8,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                myOptions);
+        }
+        google.maps.event.addDomListener(window, "load", initialize);
+    </script>
 
-        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-        <script>
-
-            function initialize() {
-                var latlng = new google.maps.LatLng(-34.397, 150.644);
-                var myOptions = {
-                    zoom: 8,
-                    center: latlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                var map = new google.maps.Map(document.getElementById("map_canvas"),
-                        myOptions);
-            }
-            google.maps.event.addDomListener(window, "load", initialize);
-
-        </script>
-
+    <!-- Javascript end-->
 
 </body>
 
-<!-- Mirrored from themetechmount.com/html/altech/contact-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 06:55:31 GMT -->
+<!-- Mirrored from themetechmount.com/html/altech/contact-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 06:55:31 GMT -->
+
 </html>
