@@ -77,8 +77,8 @@ Route::delete('/partener-delete/{id}', [PartenerController::class, 'destroy'])->
 // Booking Application  routes
 
 
-//Home 
-Route::get('/home',[HomeController::class,'index']);
+//Home
+Route::get('/',[HomeController::class,'index']);
 
 
 Route::resource('user', UserController::class);
@@ -92,7 +92,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-//Contact routes 
+//Contact routes
 Route::get('/contact',[contactController::class,'contact']);
 Route::post('/contact',[contactController::class,'sendEmail'])->name('add-message');
 
