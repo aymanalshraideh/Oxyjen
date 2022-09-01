@@ -71,6 +71,7 @@ class StartupApplyController extends Controller
     public function update(Request $request, $id)
     {
         $startup = StartupApply::find($id);
+        
         $startup->update($request->all());
         return redirect()->route('StartupApply')->with('status', 'Status updated successfully');
     }

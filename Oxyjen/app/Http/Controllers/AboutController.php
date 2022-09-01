@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class AboutController extends Controller
 {
@@ -37,9 +38,16 @@ class AboutController extends Controller
     public function store(Request $request)
     {
         $about = $request->all();
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('Image/about'), $filename);
+            $about['image'] = "$filename";
+
+        }
         About::create($about);
         return redirect()->route('about');
-        
+
     }
 
     /**
@@ -75,7 +83,20 @@ class AboutController extends Controller
     public function update(Request $request, $id)
     {
         $about = About::find($id);
-        $about->update($request->all());
+        $about->about_us = $request->about_us;
+        if ($request->file('image')) {
+            $distenation = 'Image/about/' . $about->image;
+            if (File::exists($distenation)) {
+                File::delete($distenation);
+            }
+            $file = $request->file('image');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('Image/about'), $filename);
+            $about['image'] = "$filename";
+
+        }
+
+        $about->save();
         return redirect()->route('about');
     }
 

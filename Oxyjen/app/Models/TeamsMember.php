@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class TeamsMember extends Model
 {
+    protected $fillable = [
+        'name',
+        'image',
+        'facebook',
+        'twitter',
+        'linkedin',
+        'email',
+    ];
     use HasFactory;
 }

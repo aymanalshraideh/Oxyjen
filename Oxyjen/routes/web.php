@@ -1,15 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SliderController;
+use App\Http\Controllers\HomeController;
 
-use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\contactController;
+use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\PartenerController;
+use App\Http\Controllers\TeamsMemberController;
 use App\Http\Controllers\StartupApplyController;
 use App\Http\Controllers\startupcompanyController;
-use App\Http\Controllers\PartenerController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\contactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -82,7 +83,14 @@ Route::post('partenercancel/{id}', [PartenerController::class, 'cancel'])->name(
 Route::post('partenerpend/{id}', [PartenerController::class, 'pending'])->name('partenerpending');
 Route::post('partenerconfirm/{id}', [PartenerController::class, 'confirm'])->name('partenerconfirm');
 
-// Booking Application  routes
+// TeamMembers Application  routes
+Route::get('/team', [TeamsMemberController::class, 'index'])->name('team');
+Route::get('/team-create', [TeamsMemberController::class, 'create'])->name('team-create');
+Route::post('/team-store', [TeamsMemberController::class, 'store'])->name('team-store');
+Route::get('/team-edit/{id}', [TeamsMemberController::class, 'edit'])->name('team-edit');
+Route::put('/team-update/{id}', [TeamsMemberController::class, 'update'])->name('team-update');
+Route::delete('/team-delete/{id}', [TeamsMemberController::class, 'destroy'])->name('team-delete');
+
 
 
 //Home

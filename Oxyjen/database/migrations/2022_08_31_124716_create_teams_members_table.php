@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('image');
             $table->string('linkedin');
-            $table->string('Instagram');
+            $table->string('twitter');
             $table->string('facebook');
+            $table->string('email');
             $table->timestamps();
         });
     }

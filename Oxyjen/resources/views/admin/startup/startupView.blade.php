@@ -7,7 +7,7 @@
             $count = 1;
         @endphp
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span> About US Table</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span> Startup Table</h4>
             @if (session('status'))
                 <h5 class="alert alert-success">{{ session('status') }}</h5>
             @endif
@@ -37,7 +37,8 @@
                                         {{ $item->companyName }}
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->description }}
+                                        
+                                        <textarea name="program" id="basic-default-message" required class="form-control" placeholder="Add text here..." >{{ $item->description }}</textarea>
                                     </td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
                                         <img src="{{  url('Image/startup/' . $item->image) }}" alt="startup image"

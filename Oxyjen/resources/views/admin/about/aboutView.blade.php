@@ -22,8 +22,7 @@
                                 <th>No</th>
 
                                 <th>About Us</th>
-                                <th>Team Members</th>
-                                <th>Partenership</th>
+                                <th>Image</th>
                                 <th>Action</th>
 
                             </tr>
@@ -36,13 +35,10 @@
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
                                         {{ $item->about_us }}
                                     </td>
-                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->teamMembers }}
-                                    </td>
-                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->partenership }}
-                                    </td>
+                                     <td>
+                                     <img src="{{url('/Image/about/'.$item->image)}}" alt="cover2"  class="rounded-circle"  width="150px" height='100px' />
 
+                                    </td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow"

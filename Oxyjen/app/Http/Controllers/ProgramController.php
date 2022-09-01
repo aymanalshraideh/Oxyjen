@@ -92,7 +92,7 @@ class ProgramController extends Controller
         $program = Program::find($id);
         $program->program = $request->program;
         if ($request->file('image1')) {
-            $distenation = 'Image/program' . $program->image1;
+            $distenation = 'Image/program/' . $program->image1;
             if (File::exists($distenation)) {
                 File::delete($distenation);
             }
@@ -103,7 +103,7 @@ class ProgramController extends Controller
 
         }
         if ($request->file('image2')) {
-            $distenation = 'Image/program' . $program->image2;
+            $distenation = 'Image/program/' . $program->image2;
             if (File::exists($distenation)) {
                 File::delete($distenation);
             }

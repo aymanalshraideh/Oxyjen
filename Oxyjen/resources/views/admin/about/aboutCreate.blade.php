@@ -25,14 +25,11 @@
                                     <label class="form-label" for="basic-default-message">About us</label>
                                     <textarea name="about_us" id="basic-default-message" required class="form-control" placeholder="Add text here..." ></textarea>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="formFile" class="form-label">Team Member</label>
-                                    <input class="form-control" name="teamMembers" type="text" id="formFile" required />
+                                 <div class="mb-3">
+                                    <label for="formFile" class="form-label">Image</label>
+                                    <input class="form-control" name="image" type="file" id="formFile" required />
                                 </div>
-                                <div class="mb-3">
-                                    <label for="formFile" class="form-label">Partenership</label>
-                                    <input class="form-control" name="partenership" type="text" id="formFile" required />
-                                </div>
+                                
 
                                 <button type="submit" class="btn btn-primary">Send</button>
                             </form>
