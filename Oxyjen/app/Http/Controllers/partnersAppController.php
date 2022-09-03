@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\StartupApply;
+use App\Models\Partener;
 use Illuminate\Http\Request;
 
-class startupcompanyController extends Controller
+class partnersAppController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,8 @@ class startupcompanyController extends Controller
     public function index()
     {
         //
-        $startup = StartupApply::all();
-        return view('applications.startupApp', compact('startup'));
-
+        $partner = Partener::all();
+        return view('applications.partnerApp', compact('partner'));
     }
 
     /**
@@ -27,9 +26,6 @@ class startupcompanyController extends Controller
     public function create()
     {
         //
-
-        
-
     }
 
     /**
@@ -42,26 +38,15 @@ class startupcompanyController extends Controller
     {
         //
         $input = $request->all();
-        StartupApply::create($input);
-        return redirect('/startupApp')->with('flash_message', 'Startup Submited Successfully!');  
-        // $startup_applies = new StartupApply();
-        // $startup_applies->companyName = $request->companyName;
-        // $startup_applies->location = $request->location;
-        // $startup_applies->description = $request->description;
-        // $startup_applies->ceoName = $request->ceoName;
-        // $startup_applies->ceoPhone = $request->ceoPhone;
-        // $startup_applies->ceoEmail = $request->ceoEmail;
-        
+        Partener::create($input);
+        return redirect('/partnerApp')->with('flash_message', 'partner Submited Successfully!');  
         if ($request->file('image')) {
             $file = $request->file('image');
             $filename = date('YmdHi') . $file->getClientOriginalName();
-            $file->move(public_path('Image/StartupImage'), $filename);
+            $file->move(public_path('Image/PartnerImage'), $filename);
             $request->image = "$filename";
         }
         $request->save();
-      
-
-
     }
 
     /**
