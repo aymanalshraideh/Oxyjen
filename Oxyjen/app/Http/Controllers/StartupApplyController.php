@@ -71,9 +71,9 @@ class StartupApplyController extends Controller
     public function update(Request $request, $id)
     {
         $startup = StartupApply::find($id);
-        $startup->status = $request->status;
-        $startup->save();
-        return redirect()->route('StartupApply')->with('success', 'Status updated successfully');
+        
+        $startup->update($request->all());
+        return redirect()->route('StartupApply')->with('status', 'Status updated successfully');
     }
 
     /**
@@ -86,6 +86,25 @@ class StartupApplyController extends Controller
     {
         $startup = StartupApply::find($id);
         $startup->delete();
-        return redirect()->route('StartupApply')->with('success', 'Startup Application Deleted Successfully');
+        return redirect()->route('StartupApply')->with('status', 'Startup Application Deleted Successfully');
+    }
+    public function cancel($id){
+        $startup = StartupApply::find($id);
+        $startup->update(['status' => 2]);
+        return redirect()->route('StartupApply')->with('status', 'Startup Application Cancelled Successfully');
+
+    }
+    public function confirm($id){
+        $startup = StartupApply::find($id);
+        $startup->update(['status' => 1]);
+        return redirect()->route('StartupApply')->with('status', 'Startup Application Approved Successfully');
+    }
+
+    public function pending($id)
+    {
+        $startup = StartupApply::find($id);
+        $startup->update(['status' => 0]);
+        return redirect()->route('StartupApply')->with('status', 'Startup Application Pending Successfully');
+        
     }
 }

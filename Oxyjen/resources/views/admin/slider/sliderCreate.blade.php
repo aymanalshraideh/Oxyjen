@@ -5,9 +5,11 @@
         <!-- Content -->
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span>Create Slider</h4>
 
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span>Create Slider</h4>
+            @if (session('status'))
+                <h5 class="alert alert-success">{{ session('status') }}</h5>
+            @endif
             <!-- Basic Layout -->
             <div class="row">
                 <div class="col-xl">
@@ -17,31 +19,35 @@
                             <small class="text-muted float-end">Default label</small>
                         </div>
                         <div class="card-body">
-                            <form action="{{route('slider-store')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{ route('slider-store') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname" required>Cover Title 1</label>
-                                    <input type="text" name="title1" class="form-control" id="basic-default-fullname" required />
+                                    <input type="text" name="title1" class="form-control" id="basic-default-fullname"
+                                        required />
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname" required>Cover Title 2</label>
-                                    <input type="text" name="title2" class="form-control" id="basic-default-fullname" required />
+                                    <input type="text" name="title2" class="form-control" id="basic-default-fullname"
+                                        required />
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname" required>Cover Link 1</label>
-                                    <input type="text" name="link1" class="form-control" id="basic-default-fullname" required />
+                                    <input type="text" name="link1" class="form-control" id="basic-default-fullname"
+                                        required />
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname" required>Cover Link 2</label>
-                                    <input type="text" name="link2" class="form-control" id="basic-default-fullname" required/>
+                                    <input type="text" name="link2" class="form-control" id="basic-default-fullname"
+                                        required />
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-message">Description1</label>
-                                    <textarea name="description1" id="basic-default-message" required class="form-control" placeholder="Add text here..." ></textarea>
+                                    <textarea name="description1" id="basic-default-message" required class="form-control" placeholder="Add text here..."></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-message">Description2</label>
-                                    <textarea name="description2" id="basic-default-message" required class="form-control" placeholder="Add text here..." ></textarea>
+                                    <textarea name="description2" id="basic-default-message" required class="form-control" placeholder="Add text here..."></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Cover Image1</label>

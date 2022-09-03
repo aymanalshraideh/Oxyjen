@@ -19,7 +19,3 @@ class StartupApply extends Model
 
 }
 
-class Contact extends Model
-{
-    use HasFactory;
-}

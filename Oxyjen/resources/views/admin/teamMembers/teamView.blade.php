@@ -7,7 +7,7 @@
             $count = 1;
         @endphp
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span> About US Table</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span>Team Members</h4>
             @if (session('status'))
                 <h5 class="alert alert-success">{{ session('status') }}</h5>
             @endif
@@ -20,29 +20,37 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-
-                                <th>About Us</th>
-                                <th>Team Members</th>
-                                <th>Partenership</th>
+                                <th>Name</th>
+                                <th>Image</th>
+                                <th>Linked-in</th>
+                                <th>Facebook</th>
+                                <th>Twitter</th>
                                 <th>Action</th>
 
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
-                            @foreach ($about as $item)
+                            @foreach ($team as $item)
                                 <tr>
-                                    <th>{{$count++}}</th>
+                                    <th>{{ $count++ }}</th>
 
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->about_us }}
+                                        {{ $item->name }}
                                     </td>
-                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->teamMembers }}
-                                    </td>
-                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        {{ $item->partenership }}
-                                    </td>
+                                    <td>
+                                        <img src="{{ url('/Image/team/' . $item->image) }}" alt="cover2"
+                                            class="rounded-circle" width="150px" height='100px' />
 
+                                    </td>
+                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                        {{ $item->linkedin }}
+                                    </td>
+                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                        {{ $item->twitter }}
+                                    </td>
+                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                        {{ $item->facebook }}
+                                    </td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
@@ -50,11 +58,11 @@
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="{{ route('about-edit', $item->id) }}"><i
+                                                <a class="dropdown-item" href="{{ route('team-edit', $item->id) }}"><i
                                                         class="bx bx-edit-alt me-1"></i>
                                                     Edit</a>
 
-                                                <form action={{ route('about-delete', $item->id) }} method="POST"
+                                                <form action={{ route('team-delete', $item->id) }} method="POST"
                                                     class="d-inline">
                                                     @method('DELETE')
                                                     @csrf

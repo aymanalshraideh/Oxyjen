@@ -1,16 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SliderController;
+use App\Http\Controllers\HomeController;
 
-use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\contactController;
+use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\PartenerController;
+use App\Http\Controllers\TeamsMemberController;
 use App\Http\Controllers\StartupApplyController;
 use App\Http\Controllers\startupcompanyController;
 use App\Http\Controllers\partnersAppController;
-use App\Http\Controllers\PartenerController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\contactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,6 +58,10 @@ Route::post('/StartupApply-store', [StartupApplyController::class, 'store'])->na
 Route::get('/StartupApply-edit/{id}', [StartupApplyController::class, 'edit'])->name('StartupApply-edit');
 Route::put('/StartupApply-update/{id}', [StartupApplyController::class, 'update'])->name('StartupApply-update');
 Route::delete('/StartupApply-delete/{id}', [StartupApplyController::class, 'destroy'])->name('StartupApply-delete');
+Route::post('Startupcancel/{id}', [StartupApplyController::class, 'cancel'])->name('Startupcancel');
+Route::post('Startuppend/{id}', [StartupApplyController::class, 'pending'])->name('Startuppending');
+Route::post('Startupconfirm/{id}', [StartupApplyController::class, 'confirm'])->name('Startupconfirm');
+
 // Booking Application  routes
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 Route::get('/booking-create', [BookingController::class, 'create'])->name('booking-create');
@@ -64,9 +69,9 @@ Route::post('/booking-store', [BookingController::class, 'store'])->name('bookin
 Route::get('/booking-edit/{id}', [BookingController::class, 'edit'])->name('booking-edit');
 Route::put('/booking-update/{id}', [BookingController::class, 'update'])->name('booking-update');
 Route::delete('/booking-delete/{id}', [BookingController::class, 'destroy'])->name('booking-delete');
-Route::post('cancel/{id}', [BookingController::class, 'cancel'])->name('cancel');
-Route::post('pend/{id}', [BookingController::class, 'pending'])->name('pending');
-Route::post('confirm/{id}', [BookingController::class, 'confirm'])->name('confirm');
+Route::post('bookingcancel/{id}', [BookingController::class, 'cancel'])->name('bookingcancel');
+Route::post('bookingpend/{id}', [BookingController::class, 'pending'])->name('bookingpending');
+Route::post('bookingconfirm/{id}', [BookingController::class, 'confirm'])->name('bookingconfirm');
 
 // Partener routes
 Route::get('/partener', [PartenerController::class, 'index'])->name('partener');
@@ -75,11 +80,22 @@ Route::post('/partener-store', [PartenerController::class, 'store'])->name('part
 Route::get('/partener-edit/{id}', [PartenerController::class, 'edit'])->name('partener-edit');
 Route::put('/partener-update/{id}', [PartenerController::class, 'update'])->name('partener-update');
 Route::delete('/partener-delete/{id}', [PartenerController::class, 'destroy'])->name('partener-delete');
-// Booking Application  routes
+Route::post('partenercancel/{id}', [PartenerController::class, 'cancel'])->name('partenercancel');
+Route::post('partenerpend/{id}', [PartenerController::class, 'pending'])->name('partenerpending');
+Route::post('partenerconfirm/{id}', [PartenerController::class, 'confirm'])->name('partenerconfirm');
+
+// TeamMembers Application  routes
+Route::get('/team', [TeamsMemberController::class, 'index'])->name('team');
+Route::get('/team-create', [TeamsMemberController::class, 'create'])->name('team-create');
+Route::post('/team-store', [TeamsMemberController::class, 'store'])->name('team-store');
+Route::get('/team-edit/{id}', [TeamsMemberController::class, 'edit'])->name('team-edit');
+Route::put('/team-update/{id}', [TeamsMemberController::class, 'update'])->name('team-update');
+Route::delete('/team-delete/{id}', [TeamsMemberController::class, 'destroy'])->name('team-delete');
 
 
-//Home 
-Route::get('/home',[HomeController::class,'index']);
+
+//Home
+Route::get('/',[HomeController::class,'index']);
 
 
 Route::resource('user', UserController::class);
@@ -93,7 +109,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-//Contact routes 
+//Contact routes
 Route::get('/contact',[contactController::class,'contact']);
 Route::post('/contact',[contactController::class,'sendEmail'])->name('add-message');
 

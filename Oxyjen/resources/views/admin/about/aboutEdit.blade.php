@@ -5,8 +5,8 @@
         <!-- Content -->
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span>Create About Us</h4>
+
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span>Edit About Us</h4>
 
             <!-- Basic Layout -->
             <div class="row">
@@ -17,22 +17,19 @@
                             <small class="text-muted float-end">Default label</small>
                         </div>
                         <div class="card-body">
-                            <form action="{{route('about-update',$about->id)}}" method="post" enctype="multipart/form-data">
+                            <form action="{{ route('about-update', $about->id) }}" method="post"
+                                enctype="multipart/form-data">
                                 @method('PUT')
                                 @csrf
-                                
-                               
+
+
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-message">About us</label>
-                                    <textarea name="about_us" id="basic-default-message" required class="form-control" placeholder="Add text here..." >{{$about->about_us}}</textarea>
+                                    <textarea name="about_us" id="basic-default-message" required class="form-control" placeholder="Add text here...">{{ $about->about_us }}</textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="formFile" class="form-label">Team Member</label>
-                                    <input class="form-control" name="teamMembers" type="text" id="formFile" value="{{$about->teamMembers}}" required />
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formFile" class="form-label">Partenership</label>
-                                    <input class="form-control" name="partenership" type="text" id="formFile" value="{{$about->partenership}}" required />
+                                    <label for="formFile" class="form-label">Image</label>
+                                    <input class="form-control" name="image" type="file" id="formFile" required />
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Send</button>

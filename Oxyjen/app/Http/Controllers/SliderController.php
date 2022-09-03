@@ -100,7 +100,7 @@ class SliderController extends Controller
         $slider->link2 = $request->link2;
 
         if ($request->file('coverImage1')) {
-            $distenation = 'Image/slider' . $slider->coverImage1;
+            $distenation = 'Image/slider/' . $slider->coverImage1;
             if (File::exists($distenation)) {
                 File::delete($distenation);
             }
@@ -111,7 +111,7 @@ class SliderController extends Controller
 
         }
         if ($request->file('coverImage2')) {
-            $distenation = 'Image/slider' . $slider->coverImage2;
+            $distenation = 'Image/slider/' . $slider->coverImage2;
             if (File::exists($distenation)) {
                 File::delete($distenation);
             }
