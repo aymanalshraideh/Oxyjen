@@ -11,6 +11,7 @@ use App\Http\Controllers\PartenerController;
 use App\Http\Controllers\TeamsMemberController;
 use App\Http\Controllers\StartupApplyController;
 use App\Http\Controllers\startupcompanyController;
+use App\Http\Controllers\partnersAppController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -119,3 +120,7 @@ Route::get('/partner', function () {
 //startup routes
 Route::get('/startupApp', [startupcompanyController::class,'index']);
 Route::post('/startupApp',[startupcompanyController::class,'store'])->name('add-startup');
+
+//Partner routes
+Route::get('/partnerApp', [partnersAppController::class,'index']);
+Route::post('/partnerApp',[partnersAppController::class,'store'])->name('add-partner');

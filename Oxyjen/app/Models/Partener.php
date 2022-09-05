@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Partener extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'phone', 'email', 'companyName', 'status'];
+    protected $fillable = ['name', 'phone','location', 'email', 'companyName', 'status'];
 }
