@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 use App\Mail\contactMail;
 use Illuminate\Http\Request;
-use Mail;
+use Illuminate\Support\Facades\Mail;
+
 class contactController extends Controller
 {
     //
@@ -18,7 +19,7 @@ class contactController extends Controller
             'subject' => $request->subject,
             'message' => $request->message,
         ];
-        Mail::to('sujoody73@gmail.com')->send(new contactMail($datalis));
+        Mail::to('lujain.masters@gmail.com')->send(new contactMail($datalis));
         return back()->with('message_sent','Your Message has been sent successfully!');
     }
 }
