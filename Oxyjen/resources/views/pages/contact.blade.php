@@ -369,14 +369,14 @@
                                         <h2 class="title">Drop Us A Line</h2>
                                     </div>
                                 </div><!-- section title end -->
-                                @if(Session::has('message_sent'))
-                                <div class="alert alert-success">
-                                    {{ Session::get('message sent sussesfully') }}
-                                </div>
+                                @if (Session::has('message_sent'))
+                                    <div class="alert alert-success">
+                                        {{ Session::get('message sent sussesfully') }}
+                                    </div>
                                 @endif
-                                <form id="ttm-quote-form" class="row ttm-quote-form clearfix" 
-                                action="{{ route('add-message') }}" method="POST" enctype="multipart/form-data">
-                                @csrf  
+                                <form id="ttm-quote-form" class="row ttm-quote-form clearfix"
+                                    action="{{ route('add-message') }}" method="POST" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <input name="name" type="text" class="form-control bg-white"
@@ -412,7 +412,7 @@
                                             <button type="submit" id="submit"
                                                 class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor"
                                                 value="">
-                                                Submit 
+                                                Submit
                                             </button>
                                         </div>
                                     </div>
