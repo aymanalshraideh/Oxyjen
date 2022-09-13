@@ -124,3 +124,7 @@ Route::post('/startupApp',[startupcompanyController::class,'store'])->name('add-
 //Partner routes
 Route::get('/partnerApp', [partnersAppController::class,'index']);
 Route::post('/partnerApp',[partnersAppController::class,'store'])->name('add-partner');
+
+Route::get('/booking', function () {
+    return view('applications.booking');
+});
